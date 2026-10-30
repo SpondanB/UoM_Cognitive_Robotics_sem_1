@@ -33,7 +33,7 @@ cv2.imwrite('earth_invert.jpg', output)
 
 # Convert image to integer type so if values go outside
 # the range 0-255, we can clip it
-img = img.astype(np.int)
+img = img.astype(np.int32)
 
 # Increase brightness
 output = img + 50
