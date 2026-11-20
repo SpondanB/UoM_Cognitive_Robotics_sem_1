@@ -20,7 +20,7 @@ import numpy as np
 def findFeatures(img):
 
     # Initiate feature detector: ORB
-    fd = cv2.ORB_create(nfeatures=200) # Limit number of features found to 200
+    fd = cv2.ORB_create(nfeatures=500) # Limit number of features found to 200
 
     # find the keypoints and descriptors with ORB
     kps, descs = fd.detectAndCompute(img, None)
